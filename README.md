@@ -3,4 +3,3 @@ Description: The small game about bomb. You are sapper who needs to defuse the b
 Necessary modules: Tkinter, Messagebox, pygame.
 All audio i used is important too.
 
-![alt text](C:/Users/Пользователь/Desktop/project/pc.jpg)
