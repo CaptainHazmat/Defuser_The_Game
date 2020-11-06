@@ -5,12 +5,12 @@ import pygame
 wndw = Tk()
 pygame.mixer.init()
 
-running = True
 def btn_d(number):
     current = inputer.get()
     inputer.delete(0, END)
     inputer.insert(0,str(current) + str(number))
     print('number button was clicked')
+
 def btn_entr():
     inputer.get()
     password = inputer.get()
@@ -39,6 +39,7 @@ wndw.resizable(width = False, height = False)
 wndw.iconbitmap('df.ico')
 
 t = 30
+
 def countdown():
     global t, wndw
     wndw.title(str(t))
@@ -62,12 +63,15 @@ lbl.after(31000, timer)
 butt = Button(wndw, text = '1', bg = 'grey', padx = 30, pady = 10, command = lambda: btn_d(1))
 butt2 = Button(wndw, text = '2', bg = 'grey', padx = 30, pady = 10, command = lambda: btn_d(2))
 butt3 = Button(wndw, text = '3', bg = 'grey', padx = 30, pady = 10, command = lambda: btn_d(3))
+
 butt4 = Button(wndw, text = '4', bg = 'grey', padx = 30, pady = 10, command = lambda: btn_d(4))
 butt5 = Button(wndw, text = '5', bg = 'grey', padx = 30, pady = 10, command = lambda: btn_d(5))
 butt6 = Button(wndw, text = '6', bg = 'grey', padx = 30, pady = 10, command = lambda: btn_d(6))
+
 butt7 = Button(wndw, text = '7', bg = 'grey', padx = 30, pady = 10, command = lambda: btn_d(7))
 butt8 = Button(wndw, text = '8', bg = 'grey', padx = 30, pady = 10, command = lambda: btn_d(8))
 butt9 = Button(wndw, text = '9', bg = 'grey', padx = 30, pady = 10, command = lambda: btn_d(9))
+
 butt0 = Button(wndw, text = '0', bg = 'grey', padx = 30, pady = 10, command = lambda: btn_d(0))
 butt_entr = Button(wndw, text = 'ENT', bg = 'grey', padx = 22, pady = 10, command = btn_entr)
 
