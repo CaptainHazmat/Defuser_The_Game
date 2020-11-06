@@ -3,6 +3,9 @@ from tkinter import messagebox
 import pygame
 
 wndw = Tk()
+wndw.title('Bomb')
+wndw.resizable(width = False, height = False)
+wndw.iconbitmap('df.ico')
 pygame.mixer.init()
 
 def btn_d(number):
@@ -24,19 +27,17 @@ def btn_entr():
         messagebox.showinfo('ERROR', 'WRONG PASSWORD') 
     print('enter button was clicked')
 
+    
 def started(): 
     pygame.mixer.music.load("pl.mp3")
     pygame.mixer.music.play() 
     messagebox.showinfo('The Sapper', 'Welcome to "Sapper the Game", your job is defusing the bomb, you have only 30 seconds before it explodes') 
+    
 def timer():
     pygame.mixer.music.load("ex.mp3")
     pygame.mixer.music.play()
     messagebox.showinfo('GAME OVER','BOMB EXPLODED')
     wndw.quit()
-
-wndw.title('Bomb')
-wndw.resizable(width = False, height = False)
-wndw.iconbitmap('df.ico')
 
 t = 30
 
