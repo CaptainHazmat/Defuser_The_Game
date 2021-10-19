@@ -5,7 +5,6 @@ import pygame
 wndw = Tk()
 wndw.title('Bomb')
 wndw.resizable(width = False, height = False)
-wndw.iconbitmap('df.ico')
 pygame.mixer.init()
 
 def btn_d(number):
